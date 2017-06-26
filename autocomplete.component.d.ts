@@ -35,7 +35,7 @@ export declare class AutoCompleteComponent {
      * select item from list
      * @param item
      */
-    select(selection: any): void;
+    select(selection: any, event: any): void;
     /**
      * get current input value
      * @returns {string}
