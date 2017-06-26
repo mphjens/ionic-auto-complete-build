@@ -144,6 +144,13 @@ var AutoCompleteComponent = (function () {
             event.preventDefault();
         }
     };
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    AutoCompleteComponent.prototype.listClick = function (event) {
+        event.preventDefault();
+    };
     return AutoCompleteComponent;
 }());
 AutoCompleteComponent.decorators = [

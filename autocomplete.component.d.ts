@@ -56,4 +56,5 @@ export declare class AutoCompleteComponent {
      * @param event
      */
     private documentClickHandler(event);
+    listClick(event: any): void;
 }
