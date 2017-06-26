@@ -35,7 +35,7 @@ export declare class AutoCompleteComponent {
      * select item from list
      * @param item
      */
-    select(selection: any, event: any): void;
+    select(selection: any): void;
     /**
      * get current input value
      * @returns {string}
@@ -56,5 +56,4 @@ export declare class AutoCompleteComponent {
      * @param event
      */
     private documentClickHandler(event);
-    listClick(event: any): void;
 }
