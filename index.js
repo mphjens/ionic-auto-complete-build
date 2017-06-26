@@ -96,7 +96,7 @@ var AutoCompleteComponent = (function () {
         }
         // emit selection event
         this.itemSelected.emit(selection);
-        event.preventDefault();
+        event.stopPropagation();
     };
     /**
      * get current input value
@@ -141,7 +141,7 @@ var AutoCompleteComponent = (function () {
             ||
                 (!this.inputElem && this.inputElem._elementRef.nativeElement.contains(event.target))) {
             this.hideItemList();
-            event.preventDefault();
+            event.stopPropagation();
         }
     };
     /**
@@ -149,7 +149,7 @@ var AutoCompleteComponent = (function () {
      * @return {?}
      */
     AutoCompleteComponent.prototype.listClick = function (event) {
-        event.preventDefault();
+        event.stopPropagation();
     };
     return AutoCompleteComponent;
 }());
